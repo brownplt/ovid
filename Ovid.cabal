@@ -1,0 +1,24 @@
+Name:           Ovid
+Version:        1.0
+Cabal-Version:	>= 1.2
+Copyright:      Copyright (c) 2007-2009 Brown University
+License:        BSD2
+License-file:   LICENSE
+Author:         Spiridon Eliopoulos, Arjun Guha, Brendan Hickey
+Maintainer:     Arjun Guha <arjun@cs.brown.edu>
+Homepage:       http://www.cs.brown.edu/research/plt/
+Category:       Tools
+Build-Type:     Custom
+Synopsis:       Javascript analysis tools
+ 
+Executable jscfa
+  Main-Is:        JSCFA.hs
+  Hs-Source-Dirs: src 
+  Build-Depends:
+    base, syb, network, mtl, parsec, editline, pretty, containers, HUnit,
+    HaXml, WebBits==0.11.0
+  ghc-options:    -fwarn-incomplete-patterns
+  Extensions:     
+    Generics Rank2Types MultiParamTypeClasses FunctionalDependencies
+    TypeSynonymInstances FlexibleInstances FlexibleContexts
+    DeriveDataTypeable ExistentialQuantification ScopedTypeVariables
